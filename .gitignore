@@ -6,3 +6,5 @@ obj/
 TestResults/
 screenshots/
 *.feature.cs
+Reports/
+ExtentReportHooks.cs

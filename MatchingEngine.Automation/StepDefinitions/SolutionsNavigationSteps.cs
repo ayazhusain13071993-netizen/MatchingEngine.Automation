@@ -66,12 +66,12 @@ public sealed class SolutionsNavigationSteps
             foreach (var text in ExpectedData.AllInOneIntro.Concat(ExpectedData.AllInOneBullets))
             {
                 Assert.That(_distributionPage.IsTextDisplayed(text), Is.True,
-                    $"Expected text not displayed in the section: '{text}'");
+                    $"Expected text not displayed on the page: '{text}'");
             }
         });
     }
     [Then("I should see the expected All-in-one solution for scale content")]
-            public void ThenIShouldSeeTheExpectedContent()
+    public void ThenIShouldSeeTheExpectedContent()
     {
         Assert.Multiple(() =>
         {
